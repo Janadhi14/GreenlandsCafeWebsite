@@ -1,154 +1,84 @@
-import React, { useState, useEffect } from 'react';
-import AboutMe from './components/AboutMe'; // Adjust the path according to your file structure
-import Skills from './components/Skills'; // Adjust the path according to your file structure
-import MyProjects from './components/MyProjects'; // Adjust the path according to your file structure
-import MyEducation from './components/MyEducation';
-import Footer from './components/Footer';
-
-
+import { useState } from 'react';
+import reactLogo from './assets/greenlandslogo.png';
+import viteLogo from '/vite.svg';
 import './App.css';
 
-
-import linkedinIcon from './assets/images/linkedin.png';
-import githubIcon from './assets/images/github.png';
-import linkedinIconDark from './assets/images/linkdinwhite.png'; // Import dark mode image
-import githubIconDark from './assets/images/githubwhite.png'; // Import dark mode image
-
-
 function App() {
-  const [theme, setTheme] = useState('light');
-  const [linkedinImage, setLinkedinImage] = useState(linkedinIcon);
-  const [githubImage, setGithubImage] = useState(githubIcon);
-
-
-  const toggleTheme = () => {
-    if (theme === 'light') {
-      setTheme('dark');
-      document.body.classList.add('dark-mode');
-      document.body.classList.remove('light-mode');
-      setLinkedinImage(linkedinIconDark); // Change image for dark mode
-      setGithubImage(githubIconDark); // Change image for dark mode
-      document.body.classList.add('dark-mode');
-      document.body.classList.remove('light-mode');
-    } else {
-      setTheme('light');
-      document.body.classList.add('light-mode');
-      document.body.classList.remove('dark-mode');
-      setLinkedinImage(linkedinIcon); // Change image for light mode
-      setGithubImage(githubIcon); // Change image for light mode
-      document.body.classList.add('light-mode');
-      document.body.classList.remove('dark-mode');
-    }
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const elements = document.querySelectorAll('.fade-in-side');
-      elements.forEach(element => {
-        const elementPosition = element.getBoundingClientRect().top;
-        const viewportHeight = window.innerHeight;
-        if (elementPosition < viewportHeight - 180) { // 100px before it enters the viewport
-          element.classList.add('visible');
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  document.body.classList.add('light-mode');
-
-
-
-  const phrases = [ "Network Engineer", "ML Engineer", "Systems Engineer", "Quant Researcher", ];
-  const [currentPhrase, setCurrentPhrase] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentPhrase((prevPhrase) => (prevPhrase + 1) % phrases.length);
-    }, 3000); // changing phrase every 3 seconds
-    return () => clearInterval(timer);
-  }, []);
-
+  const [count, setCount] = useState(0);
 
   return (
-    <div >
-
-
-      <div className="content-layer">
-        <section className="header-container">
-          <h1><span className="typing-animation">I'm Janadhi.</span></h1>
-          <button onClick={toggleTheme} id="dark-mode-toggle" className="dark-mode-toggle">
-            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
-              <path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)" />
-            </svg>
-          </button>
-
-
-        </section>
-        Aspiring:<p className="sub-title"> {phrases[currentPhrase]}</p>
-        <div className="social-links">
-        <div className="linkdinlo">
-          <a href="https://www.linkedin.com/in/janadhi-dissanayake-b7775a20b/" target="_blank" rel="noopener noreferrer">
-            <img src={linkedinImage} alt="LinkedIn" />
-          </a>
+    <>
+      <header className="header">
+        <div className="logo-container">
+          <img src={reactLogo} className="logo" alt="Greenlands Café, Bar & Restaurant logo" />
+          <h1>Greenlands Café, Bar & Restaurant</h1>
         </div>
-        <div className="githublo">
-          <a href="https://github.com/janadhi14" target="_blank" rel="noopener noreferrer">
-            <img src={githubImage} alt="GitHub" />
-          </a>
+        <nav>
+          <a href="#photos">Photos</a>
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <section id="photos" className="photos-section">
+        <h2>Photos</h2>
+        <div className="photos-grid">
+          <img src="photo1.jpg" alt="Interior 1" />
+          <img src="photo2.jpg" alt="Interior 2" />
+          <img src="photo3.jpg" alt="Dish 1" />
+          <img src="photo4.jpg" alt="Dish 2" />
         </div>
-      </div>
-        <div class="j">
-          <div class="moving_shape"></div>
+      </section>
+
+      <section id="menu" className="menu-section">
+        <h2>Menu</h2>
+        <div className="menu">
+          <div className="menu-category">
+            <h3>Appetizers</h3>
+            <p>Delicious starters to begin your meal.</p>
+          </div>
+          <div className="menu-category">
+            <h3>Main Courses</h3>
+            <p>A variety of mouth-watering main dishes.</p>
+          </div>
+          <div className="menu-category">
+            <h3>Desserts</h3>
+            <p>Sweet treats to end your meal.</p>
+          </div>
         </div>
-        <AboutMe />
+      </section>
 
-        <div className="myprojects">
-          <h2 class="subtitles" >My Projects</h2>
-          <MyProjects />
+      <section id="about" className="about-section">
+        <h2>About Us</h2>
+        <p>Welcome to Greenlands Café, Bar & Restaurant. We pride ourselves on offering a unique dining experience with a wide selection of dishes made from the freshest ingredients.</p>
+        <p>Our mission is to provide excellent service and delicious food in a welcoming atmosphere. Join us for breakfast, lunch, or dinner and enjoy a variety of culinary delights.</p>
+      </section>
+
+      <section id="contact" className="contact-section">
+        <h2>Contact Us</h2>
+        <p>For reservations or inquiries, please contact us:</p>
+        <p>Email: info@greenlandscafe.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <div className="location">
+          <h3>Location</h3>
+          <p>123 Greenlands Street, City, Country</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.9529132338743!2d-122.08385168468965!3d37.3860517798289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5aa5d88e1b7%3A0x69c8c09e3c5b5b0c!2sGoogleplex!5e0!3m2!1sen!2sus!4v1619130415405!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+          ></iframe>
         </div>
+      </section>
 
-        <div class="fade-in-side" ><h2 class="subtitles" >Our Menu</h2>
-        </div>
-        
-        <div class="fade-in-side" >
-        {/* should be a div with the currrent menu */}
-        {/* <div className="resume-download-container subtitles">
-          <a href='./downloads/JanadhiCV.pdf' download="JanadhiCV.pdf" className="resume-download-button">Menu</a>
-        </div> */}
-        <MyEducation />
-        </div>
-
-       
-        
-
-        <div className="fade-in-side">
-          <Skills />
-        </div>
-
-        <div className="fade-in-side">
-          <h2 class="subtitles" >Contact Us</h2>
-
-          <Footer />
-        </div>
-
-
-      </div>
-    </div>
+      <footer className="footer">
+        <p>&copy; 2024 Greenlands Café, Bar & Restaurant. All rights reserved.</p>
+      </footer>
+    </>
   );
 }
-
-
-
-
-
-
-
-
-
-
 
 export default App;
