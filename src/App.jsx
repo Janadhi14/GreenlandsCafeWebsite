@@ -9,8 +9,9 @@ function App() {
   return (
     <>
       <header className="header">
+      <img src={reactLogo} className="logo" alt="Greenlands Café, Bar & Restaurant logo" />
         <div className="logo-container">
-          <img src={reactLogo} className="logo" alt="Greenlands Café, Bar & Restaurant logo" />
+         
           <h1>Greenlands Café & Restaurant</h1>
         </div>
     
@@ -23,7 +24,6 @@ function App() {
 
         </nav>
       <section id="photos" className="photos-section">
-        <h2>Photos</h2>
         <div className="photos-grid">
           <div className="large-photo">
             <img src="photo1.jpg" alt="Interior 1" />
