@@ -11,25 +11,31 @@ function App() {
       <header className="header">
         <div className="logo-container">
           <img src={reactLogo} className="logo" alt="Greenlands Café, Bar & Restaurant logo" />
-          <h1>Greenlands Café, Bar & Restaurant</h1>
+          <h1>Greenlands Café & Restaurant</h1>
         </div>
-        <nav>
-          <a href="#photos">Photos</a>
-          <a href="#menu">Menu</a>
+    
+      </header>
+      <nav>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
-        </nav>
-      </header>
+          <a href="#photos">Photos</a>
+          <a href="#menu">Menu</a>
 
+        </nav>
       <section id="photos" className="photos-section">
         <h2>Photos</h2>
         <div className="photos-grid">
-          <img src="photo1.jpg" alt="Interior 1" />
-          <img src="photo2.jpg" alt="Interior 2" />
-          <img src="photo3.jpg" alt="Dish 1" />
-          <img src="photo4.jpg" alt="Dish 2" />
+          <div className="large-photo">
+            <img src="photo1.jpg" alt="Interior 1" />
+          </div>
+          <div className="small-photos">
+            <img src="photo2.jpg" alt="Interior 2" />
+            <img src="photo3.jpg" alt="Dish 1" />
+          </div>
         </div>
       </section>
+
+
 
       <section id="menu" className="menu-section">
         <h2>Menu</h2>
@@ -58,8 +64,8 @@ function App() {
       <section id="contact" className="contact-section">
         <h2>Contact Us</h2>
         <p>For reservations or inquiries, please contact us:</p>
-        <p>Email: info@greenlandscafe.com</p>
-        <p>Phone: (123) 456-7890</p>
+        <p>Email: greenlandscafe@yahoo.com</p>
+        <p>Phone: 03-488-4830 </p>
         <div className="location">
           <h3>Location</h3>
           <p>123 Greenlands Street, City, Country</p>
