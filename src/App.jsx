@@ -2,6 +2,7 @@ import { useState } from 'react';
 import logo from './assets/greenlandslogo.png';
 import insideImage from './assets/inside.jpg';
 import outsideImage from './assets/outside.jpg';
+import salmonImage from './assets/salmon.jpg';
 import './App.css';
 
 function App() {
@@ -86,7 +87,8 @@ function App() {
               </div>
             </div>
             <div className="gallery-item">
-              <div className="gallery-placeholder">
+              <img src={salmonImage} alt="Signature Dishes" />
+              <div className="gallery-overlay">
                 <p>Signature Dishes</p>
               </div>
             </div>
