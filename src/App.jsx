@@ -94,37 +94,6 @@ function App() {
         </div>
       </section>
 
-      {/* Menu Section */}
-      <section id="menu" className="menu-section">
-        <div className="container">
-          <div className="section-header">
-            <div className="section-label">What We Serve</div>
-            <h2>Explore our menu</h2>
-            <p className="section-description">Each dish tells a story of passion, precision, and the pursuit of culinary perfection.</p>
-          </div>
-          <div className="menu-grid">
-            <div className="menu-card">
-              <div className="menu-number">01</div>
-              <h3>Appetizers</h3>
-              <p>Start your culinary journey with our carefully curated selection of starters, featuring fresh, seasonal ingredients that awaken your palate.</p>
-              <div className="menu-link">View Full Menu →</div>
-            </div>
-            <div className="menu-card">
-              <div className="menu-number">02</div>
-              <h3>Main Courses</h3>
-              <p>Indulge in our signature main dishes, from classic favorites to innovative creations that celebrate authentic local flavors and traditions.</p>
-              <div className="menu-link">View Full Menu →</div>
-            </div>
-            <div className="menu-card">
-              <div className="menu-number">03</div>
-              <h3>Desserts</h3>
-              <p>Complete your meal with our decadent desserts, handcrafted daily by our pastry chefs using time-honored techniques and premium ingredients.</p>
-              <div className="menu-link">View Full Menu →</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Contact Section */}
       <section id="contact" className="contact-section">
         <div className="container">
@@ -135,12 +104,11 @@ function App() {
               <div className="contact-details">
                 <div className="contact-item">
                   <div className="contact-label">Location</div>
-                  <p>123 Greenlands Street<br/>City, Country</p>
+                  <p>215 Main South Road<br/>Dunedin, New Zealand</p>
                 </div>
                 <div className="contact-item">
                   <div className="contact-label">Hours</div>
-                  <p>Monday - Friday<br/>8:00 AM - 10:00 PM</p>
-                  <p>Saturday - Sunday<br/>9:00 AM - 11:00 PM</p>
+                  <p>Open Every Day<br/>11:00 AM - 11:00 PM</p>
                 </div>
                 <div className="contact-item">
                   <div className="contact-label">Contact</div>
@@ -150,7 +118,7 @@ function App() {
             </div>
             <div className="contact-map">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.9529132338743!2d-122.08385168468965!3d37.3860517798289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5aa5d88e1b7%3A0x69c8c09e3c5b5b0c!2sGoogleplex!5e0!3m2!1sen!2sus!4v1619130415405!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.8658447287895!2d170.49842931573957!3d-45.87867997910647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa82eaafa99ccc021%3A0x6c5c2eddbf7e3eb9!2s215%20Main%20South%20Road%2C%20Saint%20Kilda%2C%20Dunedin%209012%2C%20New%20Zealand!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
