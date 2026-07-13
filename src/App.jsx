@@ -13,7 +13,6 @@ function App() {
         <div className="nav-container">
           <div className="nav-logo">
             <img src={logo} alt="Greenlands Café Logo" />
-            <span>Greenlands</span>
           </div>
           <div className="nav-links">
             <a href="#hero">Home</a>
