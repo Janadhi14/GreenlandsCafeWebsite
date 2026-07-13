@@ -18,7 +18,7 @@ function App() {
           <div className="nav-links">
             <a href="#hero">Home</a>
             <a href="#about">About</a>
-            <a href="#menu">Menu</a>
+            <a href="https://www.ordermeal.co.nz/greenlands-cafe-and-restaurant/" target="_blank" rel="noopener noreferrer">Menu</a>
             <a href="#gallery">Gallery</a>
             <a href="#contact">Contact</a>
           </div>
@@ -32,7 +32,7 @@ function App() {
           <h1>Greenlands Café<br/>& Restaurant</h1>
           <p className="hero-subtitle">Where every meal is a celebration of fresh ingredients,<br/>expert craftsmanship, and warm hospitality.</p>
           <div className="hero-buttons">
-            <a href="#menu" className="btn btn-primary">Explore Menu</a>
+            <a href="https://www.ordermeal.co.nz/greenlands-cafe-and-restaurant/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Explore Menu</a>
             <a href="#contact" className="btn btn-secondary">Book a Table</a>
           </div>
         </div>
@@ -45,22 +45,9 @@ function App() {
             <div className="about-text">
               <div className="section-label">Our Story</div>
               <h2>Crafting memorable<br/>dining experiences</h2>
-              <p>At Greenlands Café, Bar & Restaurant, we believe that great food brings people together. Our commitment to quality begins with sourcing the finest local ingredients and ends with every perfectly plated dish.</p>
-              <p>From sunrise breakfast to late evening dinners, we've been a cornerstone of the community for over 15 years, serving authentic flavors in an atmosphere that feels like home.</p>
-            </div>
-            <div className="about-stats">
-              <div className="stat">
-                <div className="stat-number">15+</div>
-                <div className="stat-label">Years of Excellence</div>
-              </div>
-              <div className="stat">
-                <div className="stat-number">100+</div>
-                <div className="stat-label">Menu Items</div>
-              </div>
-              <div className="stat">
-                <div className="stat-number">50k+</div>
-                <div className="stat-label">Happy Customers</div>
-              </div>
+              <p>Based in Green Island, Dunedin, Greenlands Café, Bar & Restaurant is a family-owned and operated venue founded in 2017. We believe that great food brings people together, serving the community homely cooked meals — from hearty steaks and pub food to fresh pizzas. Our commitment to quality begins with sourcing the finest local ingredients and ends with every perfectly plated dish.</p>
+              <p>Beyond the kitchen, we offer a cosy space with free WiFi, a pool table, darts, and live sports, along with a full bar serving beers and more. From sunrise breakfast to late evening dinners, we're also the perfect venue for hire and events.</p>
+              <p className="about-hours">Open 7 days a week, 11am till late. Hours may differ on public holidays.</p>
             </div>
           </div>
         </div>
@@ -142,7 +129,7 @@ function App() {
             </div>
             <div className="footer-links">
               <a href="#about">About</a>
-              <a href="#menu">Menu</a>
+              <a href="https://www.ordermeal.co.nz/greenlands-cafe-and-restaurant/" target="_blank" rel="noopener noreferrer">Menu</a>
               <a href="#gallery">Gallery</a>
               <a href="#contact">Contact</a>
             </div>
